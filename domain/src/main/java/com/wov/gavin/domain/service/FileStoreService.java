@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.nio.file.StandardCopyOption;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -59,7 +60,7 @@ public class FileStoreService {
 
     public List<File> listFile() {
         File filePath = new File(fileUploadPath);
-        return Arrays.stream(filePath.listFiles()).collect(Collectors.toList());
+        return Arrays.stream(Objects.requireNonNull(filePath.listFiles())).collect(Collectors.toList());
     }
 
     File getFileByName(String fileName) {
