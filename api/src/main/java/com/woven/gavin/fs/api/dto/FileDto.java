@@ -1,4 +1,4 @@
-package com.woven.gavin.fs.api.dto;
+package com.wov.gavin.fs.api.dto;
 
 import io.swagger.annotations.ApiModel;
 import lombok.Builder;

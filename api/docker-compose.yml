@@ -1,5 +1,5 @@
 app:
-  image: woven/gavin:latest
+  image: wov/gavin:latest
   ports:
     - 10001:10001
     - 11619:11619
@@ -8,6 +8,6 @@ app:
     - JVM_MEMORY=-Xms1g -Xmx1g
     - SPRING_PROFILE=develop
   volumes:
-    - /tmp/woven/app-log:/woven/app-log
-    - /tmp/woven/gc-log:/woven/gc-log
-    - /tmp/woven/uploaded:/woven/uploaded
+    - /tmp/wov/app-log:/wov/app-log
+    - /tmp/wov/gc-log:/wov/gc-log
+    - /tmp/wov/uploaded:/wov/uploaded

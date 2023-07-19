@@ -1,4 +1,4 @@
-package com.woven.gavin.fs.api.config;
+package com.wov.gavin.fs.api.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

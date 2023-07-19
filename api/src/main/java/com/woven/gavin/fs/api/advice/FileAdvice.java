@@ -1,7 +1,7 @@
-package com.woven.gavin.fs.api.advice;
+package com.wov.gavin.fs.api.advice;
 
-import com.woven.gavin.domain.exception.FileExistException;
-import com.woven.gavin.domain.exception.FileNotExistException;
+import com.wov.gavin.domain.exception.FileExistException;
+import com.wov.gavin.domain.exception.FileNotExistException;
 import org.apache.tomcat.util.http.fileupload.impl.SizeLimitExceededException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

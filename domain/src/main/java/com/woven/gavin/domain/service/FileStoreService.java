@@ -1,7 +1,7 @@
-package com.woven.gavin.domain.service;
+package com.wov.gavin.domain.service;
 
-import com.woven.gavin.domain.exception.FileExistException;
-import com.woven.gavin.domain.exception.FileNotExistException;
+import com.wov.gavin.domain.exception.FileExistException;
+import com.wov.gavin.domain.exception.FileNotExistException;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;

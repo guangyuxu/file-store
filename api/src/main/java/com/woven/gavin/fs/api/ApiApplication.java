@@ -1,6 +1,6 @@
-package com.woven.gavin.fs.api;
+package com.wov.gavin.fs.api;
 
-import com.woven.gavin.fs.api.config.ApiConfiguration;
+import com.wov.gavin.fs.api.config.ApiConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;

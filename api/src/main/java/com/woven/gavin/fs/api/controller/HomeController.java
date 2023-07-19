@@ -1,4 +1,4 @@
-package com.woven.gavin.fs.api.controller;
+package com.wov.gavin.fs.api.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

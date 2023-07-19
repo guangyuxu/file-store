@@ -1,4 +1,4 @@
-package com.woven.gavin.fs.client;
+package com.wov.gavin.fs.client;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

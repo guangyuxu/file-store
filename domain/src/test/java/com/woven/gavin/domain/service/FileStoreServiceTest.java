@@ -1,9 +1,9 @@
-package com.woven.gavin.domain.service;
+package com.wov.gavin.domain.service;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.woven.gavin.domain.exception.FileExistException;
-import com.woven.gavin.domain.exception.FileNotExistException;
+import com.wov.gavin.domain.exception.FileExistException;
+import com.wov.gavin.domain.exception.FileNotExistException;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import org.springframework.util.Assert;
 
 public class FileStoreServiceTest {
 
-    private static String fileUploadPath = System.getProperty("user.home") + "/woven/gavin/file-store/test";
+    private static String fileUploadPath = System.getProperty("user.home") + "/wov/gavin/file-store/test";
     private static FileStoreService service;
 
     @Test

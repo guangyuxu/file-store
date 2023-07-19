@@ -1,4 +1,4 @@
-package com.woven.gavin.fs.client.config;
+package com.wov.gavin.fs.client.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

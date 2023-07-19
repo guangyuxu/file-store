@@ -1,4 +1,4 @@
-package com.woven.gavin.fs.api;
+package com.wov.gavin.fs.api;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 

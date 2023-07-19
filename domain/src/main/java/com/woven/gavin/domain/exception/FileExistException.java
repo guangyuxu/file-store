@@ -1,4 +1,4 @@
-package com.woven.gavin.domain.exception;
+package com.wov.gavin.domain.exception;
 
 public class FileExistException extends RuntimeException {
     public FileExistException(String fileName) {

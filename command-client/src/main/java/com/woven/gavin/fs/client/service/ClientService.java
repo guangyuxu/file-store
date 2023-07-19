@@ -1,6 +1,6 @@
-package com.woven.gavin.fs.client.service;
+package com.wov.gavin.fs.client.service;
 
-import com.woven.gavin.fs.client.template.ClientTemplate;
+import com.wov.gavin.fs.client.template.ClientTemplate;
 import java.io.File;
 import java.util.List;
 import lombok.RequiredArgsConstructor;

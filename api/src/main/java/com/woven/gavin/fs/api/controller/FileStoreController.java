@@ -1,8 +1,8 @@
-package com.woven.gavin.fs.api.controller;
+package com.wov.gavin.fs.api.controller;
 
 
-import com.woven.gavin.domain.service.FileStoreService;
-import com.woven.gavin.fs.api.dto.FileDto;
+import com.wov.gavin.domain.service.FileStoreService;
+import com.wov.gavin.fs.api.dto.FileDto;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;

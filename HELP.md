@@ -6,7 +6,7 @@ gradlew clean build
 # Http server
 ### Run with IDE
 ```
-main class: com.woven.gavin.fs.api.ApiApplication
+main class: com.wov.gavin.fs.api.ApiApplication
 VMOption: -Dfile.upload.path=~/tmp
 ```
 
@@ -28,20 +28,20 @@ cd file-store/
 ##### 2. build docker
 ```
 cd api
-docker build -t woven/gavin:latest -f DockerFile .
+docker build -t wov/gavin:latest -f DockerFile .
 ```
 ##### 3. create mounted folders for Linux/Macos 
 ```
-mkdir -p /tmp/woven/app-log /tmp/woven/gc-log /tmp/woven/uploaded
+mkdir -p /tmp/wov/app-log /tmp/wov/gc-log /tmp/wov/uploaded
 ```
 ##### 4. run docker by docker or docker-compose
 Option 1, Run by docker
 ```
 docker run --rm -d -p 10001:10001 -p 11619:11619 \
--v /tmp/woven/app-log:/woven/app-log \
--v /tmp/woven/gc-log:/woven/gc-log \
--v /tmp/woven/uploaded:/woven/uploaded \
-woven/gavin
+-v /tmp/wov/app-log:/wov/app-log \
+-v /tmp/wov/gc-log:/wov/gc-log \
+-v /tmp/wov/uploaded:/wov/uploaded \
+wov/gavin
 ```
 Option 2, Run by docker-compose
 ```

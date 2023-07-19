@@ -1,4 +1,4 @@
-package com.woven.gavin.fs.client;
+package com.wov.gavin.fs.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

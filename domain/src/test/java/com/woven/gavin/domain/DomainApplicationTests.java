@@ -1,4 +1,4 @@
-package com.woven.gavin.domain;
+package com.wov.gavin.domain;
 
 import org.junit.jupiter.api.Test;
 

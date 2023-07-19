@@ -1,6 +1,6 @@
-package com.woven.gavin.fs.client.command;
+package com.wov.gavin.fs.client.command;
 
-import com.woven.gavin.fs.client.service.ClientService;
+import com.wov.gavin.fs.client.service.ClientService;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;

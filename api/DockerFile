@@ -1,15 +1,15 @@
-FROM openjdk:11
+FROM openjdk:18
 
-RUN mkdir -p /woven/app /woven/app-log /woven/gc-log /woven/uploaded
+RUN mkdir -p /wov/app /wov/app-log /wov/gc-log /wov/uploaded
 
-ADD build/libs/*.jar /woven/app/app.jar
+ADD build/libs/*.jar /wov/app/app.jar
 
-VOLUME ["/woven/app-log", "/woven/gc-log", "/woven/files"]
+VOLUME ["/wov/app-log", "/wov/gc-log", "/wov/files"]
 
 EXPOSE 10001 11619
 
-ADD start.sh /woven/app/
+ADD start.sh /wov/app/
 
-RUN chmod a+x /woven/app/start.sh
+RUN chmod a+x /wov/app/start.sh
 
-ENTRYPOINT ["/bin/bash", "/woven/app/start.sh"]
+ENTRYPOINT ["/bin/bash", "/wov/app/start.sh"]

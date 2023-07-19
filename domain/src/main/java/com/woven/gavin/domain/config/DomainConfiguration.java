@@ -1,4 +1,4 @@
-package com.woven.gavin.domain.config;
+package com.wov.gavin.domain.config;
 
 import java.io.File;
 import org.springframework.beans.factory.annotation.Value;

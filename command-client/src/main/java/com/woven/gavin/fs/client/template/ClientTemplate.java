@@ -1,4 +1,4 @@
-package com.woven.gavin.fs.client.template;
+package com.wov.gavin.fs.client.template;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
