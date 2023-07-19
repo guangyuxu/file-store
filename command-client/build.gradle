@@ -1,0 +1,14 @@
+jar {
+	enabled = false
+}
+
+bootJar {
+	enabled = true
+}
+
+apply plugin: "io.spring.dependency-management"
+
+dependencies {
+	implementation 'org.springframework.shell:spring-shell-starter:2.0.0.RELEASE'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+}

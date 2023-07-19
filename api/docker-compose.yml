@@ -1,0 +1,13 @@
+app:
+  image: woven/gavin:latest
+  ports:
+    - 10001:10001
+    - 11619:11619
+  environment:
+    ## JVM SETTINGS
+    - JVM_MEMORY=-Xms1g -Xmx1g
+    - SPRING_PROFILE=develop
+  volumes:
+    - /tmp/woven/app-log:/woven/app-log
+    - /tmp/woven/gc-log:/woven/gc-log
+    - /tmp/woven/uploaded:/woven/uploaded

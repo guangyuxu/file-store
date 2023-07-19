@@ -1,0 +1,12 @@
+jar {
+	enabled = true
+}
+
+bootJar {
+	enabled = false
+}
+
+apply plugin: "io.spring.dependency-management"
+
+dependencies {
+}

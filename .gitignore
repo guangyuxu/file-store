@@ -1,0 +1,18 @@
+.gradle
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+out/
+**/out/
+dist/
+**/dist/
+bin/
+**/bin/
+
+### STS ###
+.classpath
+.project
+.settings
+*.iml
+
+**/*.log

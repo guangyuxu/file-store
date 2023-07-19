@@ -1,0 +1,16 @@
+jar {
+	enabled = false
+}
+
+bootJar {
+	enabled = true
+}
+
+apply plugin: "io.spring.dependency-management"
+
+dependencies {
+	implementation project(':domain')
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation "io.springfox:springfox-swagger2:${springfoxSwagger2Version}"
+	implementation "io.springfox:springfox-swagger-ui:${springfoxSwagger2Version}"
+}

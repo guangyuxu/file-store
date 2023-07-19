@@ -1,0 +1,15 @@
+FROM openjdk:11
+
+RUN mkdir -p /woven/app /woven/app-log /woven/gc-log /woven/uploaded
+
+ADD build/libs/*.jar /woven/app/app.jar
+
+VOLUME ["/woven/app-log", "/woven/gc-log", "/woven/files"]
+
+EXPOSE 10001 11619
+
+ADD start.sh /woven/app/
+
+RUN chmod a+x /woven/app/start.sh
+
+ENTRYPOINT ["/bin/bash", "/woven/app/start.sh"]
