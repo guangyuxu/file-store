@@ -25,6 +25,12 @@ subprojects {
     apply plugin: 'groovy'
     apply plugin: 'idea'
 
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(11)
+        }
+    }
+
     configurations {
         compileOnly {
             extendsFrom annotationProcessor

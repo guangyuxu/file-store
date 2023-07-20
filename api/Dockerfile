@@ -1,4 +1,4 @@
-FROM openjdk:20
+FROM openjdk:11
 
 RUN mkdir -p /wov/app /wov/app-log /wov/gc-log /wov/uploaded
 

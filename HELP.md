@@ -23,12 +23,12 @@ java -jar file-store/api/build/libs/*.jar -D
 ##### 1. build project
 ```
 cd file-store/
-./gradlew clean build
+./gradlew clean build bootJar
 ```
 ##### 2. build docker
 ```
 cd api
-docker build -t wov/gavin:latest -f DockerFile .
+docker build -t wov/gavin:latest -f Dockerfile .
 ```
 ##### 3. create mounted folders for Linux/Macos 
 ```
@@ -37,7 +37,7 @@ mkdir -p /tmp/wov/app-log /tmp/wov/gc-log /tmp/wov/uploaded
 ##### 4. run docker by docker or docker-compose
 Option 1, Run by docker
 ```
-docker run --rm -d -p 10001:10001 -p 11619:11619 \
+docker run -it --rm -d -p 10001:10001 -p 11619:11619 \
 -v /tmp/wov/app-log:/wov/app-log \
 -v /tmp/wov/gc-log:/wov/gc-log \
 -v /tmp/wov/uploaded:/wov/uploaded \

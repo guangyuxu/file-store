@@ -1,13 +1,15 @@
-app:
-  image: wov/gavin:latest
-  ports:
-    - 10001:10001
-    - 11619:11619
-  environment:
-    ## JVM SETTINGS
-    - JVM_MEMORY=-Xms1g -Xmx1g
-    - SPRING_PROFILE=develop
-  volumes:
-    - /tmp/wov/app-log:/wov/app-log
-    - /tmp/wov/gc-log:/wov/gc-log
-    - /tmp/wov/uploaded:/wov/uploaded
+version: 2.19.1
+services:
+  web:
+    build: .
+    ports:
+      - 10001:10001
+      - 11619:11619
+    environment:
+      ## JVM SETTINGS
+      - JVM_MEMORY=-Xms1g -Xmx1g
+      - SPRING_PROFILE=develop
+    volumes:
+      - /tmp/wov/app-log:/wov/app-log
+      - /tmp/wov/gc-log:/wov/gc-log
+      - /tmp/wov/uploaded:/wov/uploaded

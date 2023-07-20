@@ -1,9 +1,9 @@
-jar {
-	enabled = false
-}
-
 bootJar {
 	enabled = true
+}
+
+jar {
+	enabled = false
 }
 
 apply plugin: "io.spring.dependency-management"
