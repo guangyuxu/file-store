@@ -10,7 +10,8 @@ services:
       - JVM_MEMORY=-Xms1g -Xmx1g
       - SPRING_PROFILE=develop
     volumes:
-      - /tmp/wov/app-log:/wov/app-log
-      - /tmp/wov/gc-log:/wov/gc-log
-      - /tmp/wov/files:/wov/files
-    privileged: true
+      - ~/wov/app-log:/wov/app-log
+      - ~/wov/gc-log:/wov/gc-log
+      - ~/wov/files:/wov/files
+      - ~/tools:/tools
+    privileged: true # if manipulation necessary

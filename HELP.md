@@ -32,15 +32,16 @@ docker build -t wov/gavin:latest -f Dockerfile .
 ```
 ##### 3. create mounted folders for Linux/Macos 
 ```
-mkdir -p /tmp/wov/app-log /tmp/wov/gc-log /tmp/wov/files
+mkdir -p ~/wov/app-log ~/wov/gc-log ~/wov/files ~/tools
 ```
 ##### 4. run docker by docker or docker-compose
 Option 1, Run by docker
 ```
 docker run -it --rm -d -p 10001:10001 -p 11619:11619 \
--v /tmp/wov/app-log:/wov/app-log \
--v /tmp/wov/gc-log:/wov/gc-log \
--v /tmp/wov/files:/wov/files \
+-v ~/wov/app-log:/wov/app-log \
+-v ~/wov/gc-log:/wov/gc-log \
+-v ~/wov/files:/wov/files \
+-v ~/tools:/tools \
 wov/gavin
 ```
 Option 2, Run by docker-compose
