@@ -42,6 +42,7 @@ public class ClientService {
     }
 
     public List<String> listFile() {
+
         ResponseEntity<List<String>> responseEntity = template.get(PATH, fileListTypeReference);
         return responseEntity.getBody();
     }

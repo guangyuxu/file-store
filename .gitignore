@@ -8,11 +8,13 @@ dist/
 **/dist/
 bin/
 **/bin/
+.idea/
 
 ### STS ###
 .classpath
 .project
 .settings
 *.iml
+
 
 **/*.log

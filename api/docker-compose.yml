@@ -12,4 +12,5 @@ services:
     volumes:
       - /tmp/wov/app-log:/wov/app-log
       - /tmp/wov/gc-log:/wov/gc-log
-      - /tmp/wov/uploaded:/wov/uploaded
+      - /tmp/wov/files:/wov/files
+    privileged: true
